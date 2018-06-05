@@ -5,8 +5,6 @@
 #   movie = __                     #   movie = Movie.new
 # end                              # end
 
-require 'pry'
-
 def can_be_instantiated_and_then_saved
   movie = Movie.new
   movie.title = "This is a title."
@@ -25,7 +23,6 @@ def can_be_created_with_a_hash_of_attributes
 end
 
 def can_be_created_in_a_block(args = __ )
-  binding.pry
   Movie.create do |m|
     __
   end
